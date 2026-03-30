@@ -479,7 +479,7 @@ fun estudantes(){
 fun planetas(){
     val sistemasolar = listOf ("Mercúrio", "Vênus", "Terra", "Marte", "Júpiter", "Saturno", "Urano", "Netuno")
     println("Digite um planeta:")
-    val lupa = readln().lowercase().capitalize()
+    val lupa = readln().lowercase()
     if (sistemasolar.contains(lupa)) {
         println("Sim, $lupa faz parte do sistema solar!")
     } else {
@@ -491,7 +491,7 @@ fun feirinhas(){
     while (frutas.isNotEmpty()) {
         println("\nLista de compras: $frutas")
         println("Qual fruta deseja retirar?")
-        val tirar = readln().lowercase().capitalize()
+        val tirar = readln().lowercase()
         if (frutas.remove(tirar)) {
             println("Fruta foi retirada com sucesso.")
         } else {
